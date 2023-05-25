@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:backgroundTint="#2196F3"
+        android:drawableEnd="@drawable/baseline_chevron_left_24"
+        android:paddingHorizontal="11dp"
+        android:drawableTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        style="@style/ShapeAppearanceOverlay.MyApp.Button.Roundeds"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="ឈ្មោះអ្នកទិញទំនិញ"
+        android:fontFamily="@font/ango"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:width="30dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:hint="ឈ្មោះ"
+        android:layout_margin="30dp"/>
+    <EditText
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        android:drawableLeft="@drawable/baseline_local_phone_24"
+        android:width="30dp"
+        android:maxLength="10"
+        android:paddingLeft="10dp"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:hint="លេខទូរស័ព្ទ"
+        android:layout_margin="30dp"/>
+    <EditText
+        android:id="@+id/editAddress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPhone"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:width="30dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:hint="អាស័យដ្ឋាន"
+        android:layout_margin="30dp"/>
+
+    <EditText
+        android:id="@+id/editMoney"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/border_round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editAddress"
+        android:drawableLeft="@drawable/baseline_monetization_on_24"
+        android:width="30dp"
+        android:inputType="numberDecimal"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:hint="ចំនួនលុយ"
+        android:layout_margin="30dp"/>
+
+
+    <Button
+        android:id="@+id/btnEnter"
+        style="@style/MyButtonStyle"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMoney"
+        android:backgroundTint="#3851DC"
+        android:text="បញ្ជូលឈ្មោះ"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
